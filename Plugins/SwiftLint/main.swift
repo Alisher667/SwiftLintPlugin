@@ -23,7 +23,7 @@ struct SwiftLintPlugin: BuildToolPlugin {
                 executable: try context.tool(named: "swiftlint").path,
                 arguments: [
                     "lint",
-                    "--config",
+                    "--strict",
                     "\(context.package.directory.string)/.swiftlint.yml",
                     "--cache-path",
                     "\(context.pluginWorkDirectory.string)/cache",
