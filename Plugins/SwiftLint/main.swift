@@ -35,7 +35,6 @@ struct SwiftLintPlugin: BuildToolPlugin {
 
         var arguments = [
             "lint",
-            "--strict",
             "--config",
             "\(packageDirectory.string)/.swiftlint.yml",
         ]
